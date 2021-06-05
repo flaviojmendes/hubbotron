@@ -20,7 +20,7 @@ async def live(ctx, grep=None):
         if len(user_info['data']) > 0:
             embed.add_field(name=streamer,
                             value=user_info['data'][0]['title'] + "\n" + "https://twitch.tv/" + streamer,
-                            inline=True)
+                            inline=False)
 
     await ctx.author.send(embed=embed)
 
