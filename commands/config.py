@@ -1,0 +1,15 @@
+import os
+
+BOT_ENV = os.getenv("BOT_ENV")
+BOT_ENV_DEV = "dev"
+BOT_ENV_PROD = "prod"
+BOT_PROD_PREFIX = "."
+BOT_DEV_PREFIX = ","
+
+AVAILABLE_SPOILER_ACTIONS = ["--spoiler", "--nsfw"]
+
+
+IMGUR_CLIENT_ID = os.getenv("IMGUR_CLIENT_ID")
+IMGUR_CLIENT_SECRET = os.getenv("IMGUR_CLIENT_SECRET")
+
+DISCORD_EMBED_LIMIT = 25
